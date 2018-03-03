@@ -1,2 +1,5 @@
 allow wcnss_service unlabeled:dir search;
+allow wcnss_service unlabeled:file read;
+allow wcnss_service unlabeled:file open;
+allow wcnss_service unlabeled:file getattr;
 

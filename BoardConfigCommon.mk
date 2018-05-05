@@ -140,16 +140,16 @@ endif
 
 # SHIMS
 TARGET_LD_SHIM_LIBS := \
-    /system/lib/libandroid.so|libshim_ril.so \
-    /system/lib/libjustshoot.so|libshims_camera.so \
-    /system/lib/libmot_sensorlistener.so|libshims_sensorlistener.so \
-    /system/vendor/lib/libmmcamera_wavelet_lib.so|libshim_atomic.so \
-    /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
-    /system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so \
-    /system/vendor/lib/libmmcamera_wavelet_lib.so|libc_util.so \
-    /system/vendor/lib/libizat_core.so|libshims_get_process_name.so \
-    /system/lib/libfacenet.so|libprotobuf-cpp-haxx.so \
-    /system/lib/libmdmcutback.so|libqsap_shim.so
+    /vendor/lib/libandroid.so|libshim_ril.so \
+    /vendor/lib/libjustshoot.so|libshims_camera.so \
+    /vendor/lib/libmot_sensorlistener.so|libshims_sensorlistener.so \
+    /vendor/lib/libmmcamera_wavelet_lib.so|libshim_atomic.so \
+    /vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
+    /vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so \
+    /vendor/lib/libmmcamera_wavelet_lib.so|libc_util.so \
+    /vendor/lib/libizat_core.so|libshims_get_process_name.so \
+    /vendor/lib/libfacenet.so|libprotobuf-cpp-haxx.so \
+    /vendor/lib/libmdmcutback.so|libqsap_shim.so
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true

@@ -46,6 +46,9 @@ ro.pip.gated=0
 # Hotspot WiFi
 sys.usb.rps_mask=10
 
+# Time services
+persist.delta_time.enable=true
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.radio.jbims=1

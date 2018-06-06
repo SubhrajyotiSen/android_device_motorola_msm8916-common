@@ -101,6 +101,11 @@ USE_OPENGL_RENDERER := true
 BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
+#GPS
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := msm8996
+BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
+USE_DEVICE_SPECIFIC_GPS := true
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 
@@ -151,7 +156,6 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
     /system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so \
     /system/vendor/lib/libmmcamera_wavelet_lib.so|libc_util.so \
-    /system/vendor/lib/libizat_core.so|libshims_get_process_name.so \
     /system/lib/libfacenet.so|libprotobuf-cpp-haxx.so \
     /system/lib/libmdmcutback.so|libqsap_shim.so
 

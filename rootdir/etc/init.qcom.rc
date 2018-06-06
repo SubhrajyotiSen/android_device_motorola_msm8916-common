@@ -530,6 +530,11 @@ service time_daemon /vendor/bin/time_daemon
    group root
    seclabel u:r:time_daemon:s0
 
+service loc_launcher /vendor/bin/loc_launcher
+   #loc_launcher will start as root and set its uid to gps
+   class late_start
+   group gps inet diag wifi
+
 # corefile limit and ETB enabling
 on property:persist.debug.trace=1
     mkdir /data/core 0777 root root
